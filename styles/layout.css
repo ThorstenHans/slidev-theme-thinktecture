@@ -1,0 +1,116 @@
+:root {
+  // default theme color
+  // can be overrided by uses `themeConfig` option
+  --slidev-theme-primary: #FF584F;
+  --slidev-theme-color: #FF584F;
+  --slidev-theme-accent-muted: #999;
+  // colors
+  --slidev-theme-background: #fff;
+  --slidev-theme-default-headingColor: var(--slidev-theme-primary);
+
+  --slidev-theme-section-headingColor: var(--slidev-theme-primary);
+
+  --slidev-theme-demo-demoColor: var(--slidev-theme-accent-muted);
+  --slidev-theme-demo-nameColor: var(--slidev-theme-primary);
+
+  --slidev-theme-closing-thankYouColor: var(--slidev-theme-primary);
+  --slidev-theme-closing-footerColor: var(--slidev-theme-accent-muted);
+}
+
+.accent{
+  color: var(--slidev-theme-primary);
+}
+
+.slidev-layout.closing {
+  h1 {
+    @apply text-6xl leading-20;
+    color: var(--slidev-theme-closing-thankYouColor);
+  }
+
+  .footer {
+    @apply text-m leading-5;
+    color: var(--slidev-theme-closing-footerColor);
+  }
+}
+
+.slidev-layout.section {
+
+  h1 {
+    @apply text-6xl leading-20;
+    color: var(--slidev-theme-section-headingColor);
+  }
+
+  h2 {
+    @apply text-3xl leading-10;
+    color: var(--slidev-theme-accent-muted);
+  }
+}
+
+.slidev-layout.demo {
+
+  h1 {
+    @apply text-m leading-10;
+    color: var(--slidev-theme-demo-demoColor); 
+  }
+  h2 {
+    @apply text-3xl leading-10;
+    color: var(--slidev-theme-demo-nameColor);  
+  }
+  .demo-icon {
+    @apply text-9xl leading-75;
+  }
+}
+
+.slidev-layout.cover,
+.slidev-layout.intro {
+  @apply h-full grid;
+
+  h1 {
+    @apply text-6xl leading-40 mb-10;
+    color: var(--slidev-theme-primary);
+  }
+
+  h2 {
+    @apply text-4xl leading-20;
+    color: var(--slidev-theme-accent-muted);
+  }
+
+  h1 + p {
+    @apply -mt-2 opacity-50 mb-4;
+  }
+
+  p + h2, ul + h2, table + h2 {
+    @apply mt-10;
+  }
+}
+
+.slidev-layout.profile{
+    p, li {
+      @apply text-m leading-5;
+      line-height: 1.5;
+    }
+    h3 {
+      @apply text-2xl leading-15;
+      color: var(--slidev-theme-primary);
+    }
+
+    .focus,
+    .awards{
+      @apply mb-5;
+    }
+    .contact{
+      @apply text-sm leading-5;
+    }
+    .tags{
+      @apply text-sm leading-5;
+      display: flex;
+      gap: 0.5rem;
+    }
+}
+
+.slidev-layout.default {
+  h1 {
+    @apply text-4xl leading-10;
+    color: var(--slidev-theme-primary);
+  }
+}

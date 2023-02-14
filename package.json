@@ -1,0 +1,41 @@
+{
+  "name": "slidev-theme-thinktecture",
+  "author": "Thorsten Hans <thorsten.hans@gmail.com>",
+  "version": "0.0.1",
+  "keywords": [
+    "slidev-theme",
+    "slidev"
+  ],
+  "engines": {
+    "node": ">=14.0.0",
+    "slidev": ">=0.19.3"
+  },
+  "scripts": {
+    "build": "slidev build example.md",
+    "dev": "slidev example.md --open",
+    "export": "slidev export example.md",
+    "screenshot": "slidev export example.md --format png"
+  },
+  "dependencies": {
+    "@slidev/types": "^0.40.2",
+    "codemirror-theme-vars": "^0.1.1",
+    "prism-theme-vars": "^0.2.4",
+    "theme-vitesse": "^0.6.2"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^0.40.2"
+  },
+  "slidev": {
+    "colorSchema": "light",
+    "highlighter": "prism",
+    "defaults": {
+      "favicon": "https://www.thinktecture.com/storage/2021/04/favicon-150x150.jpg",
+      "fonts": {
+        "sans": "Campton, Avenir Next, Avenir",
+        "mono": "Dank Mono, Fira Code, Menlo, Monaco, Consolas, monospace",
+        "local": "Campton, Dank Mono"
+      },
+      "hightlighter": "prism"
+    }
+  }
+}
