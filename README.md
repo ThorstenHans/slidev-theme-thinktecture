@@ -16,13 +16,13 @@ This theme provides the following layouts:
 
 ### 1st slide of the presentation `cover`
 
-![Cover Layout](assets/cover.png)
+![Cover Layout](/assets/cover.png)
 
 The main content of the slide becomes the title, subtitle is set via `::subtitle::` slot and footer using `::footer::` slot
 
 ### Profile slide `profile`
 
-![Profile Layout](assets/profile.png)
+![Profile Layout](/assets/profile.png)
 
 You can provide individual profile information using the following frontmatter:
 
@@ -39,17 +39,17 @@ You can provide individual profile information using the following frontmatter:
 
 ### Section slide `section`
 
-![Section Layout](assets/section.png)
+![Section Layout](/assets/section.png)
 
 ### Demo time 🚀 `demo`
 
-![Demo Layout](assets/demo.png)
+![Demo Layout](/assets/demo.png)
 
 You can provide the name of the demo using the `name` property in frontmatter.
 
 ### Closing slide `closing`
 
-![Closing Layout](assets/closing.png)
+![Closing Layout](/assets/closing.png)
 
 You can set two links using frontmatter properties `link1` and `link2` both are optional and share the following schema `{name:string, url:string}`. Footer can be set using the `::footer::` slot.
 
