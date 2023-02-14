@@ -1,7 +1,7 @@
 {
   "name": "slidev-theme-thinktecture",
   "author": "Thorsten Hans <thorsten.hans@gmail.com>",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": [
     "slidev-theme",
     "slidev"
@@ -14,7 +14,8 @@
     "build": "slidev build example.md",
     "dev": "slidev example.md --open",
     "export": "slidev export example.md",
-    "screenshot": "slidev export example.md --format png"
+    "screenshot": "slidev export example.md --format png",
+    "postpublish": "VER=$(cat package.json | grep \\\"version\\\" | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag v$VER && git push --tags"
   },
   "dependencies": {
     "@slidev/types": "^0.40.2",
