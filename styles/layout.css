@@ -1,35 +1,48 @@
 :root {
-  // default theme color
-  // can be overrided by uses `themeConfig` option
+
   --slidev-theme-primary: #FF584F;
   --slidev-theme-color: #FF584F;
   --slidev-theme-accent-muted: #999;
-  // colors
   --slidev-theme-background: #fff;
-  --slidev-theme-default-headingColor: var(--slidev-theme-primary);
+  
+  --slidev-theme-default-header-color: var(--slidev-theme-primary);
+  
+  --slidev-theme-cover-header-color: var(--slidev-theme-primary);
+  --slidev-theme-cover-sub-header-color: var(--slidev-theme-accent-muted);
 
-  --slidev-theme-section-headingColor: var(--slidev-theme-primary);
+  --slidev-theme-profile-sub-header-color: var(--slidev-theme-primary);
 
-  --slidev-theme-demo-demoColor: var(--slidev-theme-accent-muted);
-  --slidev-theme-demo-nameColor: var(--slidev-theme-primary);
 
-  --slidev-theme-closing-thankYouColor: var(--slidev-theme-primary);
-  --slidev-theme-closing-footerColor: var(--slidev-theme-accent-muted);
+  --slidev-theme-section-header-color: var(--slidev-theme-primary);
+  --slidev-theme-section-kind-color: var(--slidev-theme-accent-muted);
+
+  --slidev-theme-demo-header-color: var(--slidev-theme-primary);
+  --slidev-theme-demo-kind-color: var(--slidev-theme-accent-muted);
+
+  --slidev-theme-closing-header-color: var(--slidev-theme-primary);
+  --slidev-theme-closing-footer-color: var(--slidev-theme-accent-muted);
 }
 
 .accent{
   color: var(--slidev-theme-primary);
 }
 
+.slidev-layout.default {
+  h1 {
+    @apply text-4xl leading-10;
+    color: var(--slidev-theme-default-header-color);
+  }
+}
+
 .slidev-layout.closing {
   h1 {
     @apply text-6xl leading-20;
-    color: var(--slidev-theme-closing-thankYouColor);
+    color: var(--slidev-theme-closing-header-color);
   }
 
   .footer {
     @apply text-m leading-5;
-    color: var(--slidev-theme-closing-footerColor);
+    color: var(--slidev-theme-closing-footer-color);
   }
 }
 
@@ -37,12 +50,12 @@
 
   h1 {
     @apply text-6xl leading-20;
-    color: var(--slidev-theme-section-headingColor);
+    color: var(--slidev-theme-section-header-color);
   }
 
   h2 {
     @apply text-3xl leading-10;
-    color: var(--slidev-theme-accent-muted);
+    color: var(--slidev-theme-section-kind-color);
   }
 }
 
@@ -50,11 +63,11 @@
 
   h1 {
     @apply text-m leading-10;
-    color: var(--slidev-theme-demo-demoColor); 
+    color: var(--slidev-theme-demo-kind-color); 
   }
   h2 {
     @apply text-3xl leading-10;
-    color: var(--slidev-theme-demo-nameColor);  
+    color: var(--slidev-theme-demo-header-color);  
   }
   .demo-icon {
     @apply text-9xl leading-75;
@@ -67,12 +80,12 @@
 
   h1 {
     @apply text-6xl leading-40 mb-10;
-    color: var(--slidev-theme-primary);
+    color: var(--slidev-theme-cover-header-color);
   }
 
   h2 {
     @apply text-4xl leading-20;
-    color: var(--slidev-theme-accent-muted);
+    color: var(--slidev-theme-cover-sub-header-color);
   }
 
   h1 + p {
@@ -91,7 +104,7 @@
     }
     h3 {
       @apply text-2xl leading-15;
-      color: var(--slidev-theme-primary);
+      color: var(--slidev-theme-profile-sub-header-color);
     }
 
     .focus,
@@ -106,11 +119,4 @@
       display: flex;
       gap: 0.5rem;
     }
-}
-
-.slidev-layout.default {
-  h1 {
-    @apply text-4xl leading-10;
-    color: var(--slidev-theme-primary);
-  }
 }
