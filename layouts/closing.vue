@@ -19,11 +19,11 @@ const props = withDefaults(defineProps<Props>(), {
       <h1>Thank you</h1>
       <div class="links flex-1">
         <span v-if="link1">
-          <a href="{{ link1.url }}" target="_blank">{{ link1.name }}</a>
+          <a v-bind:href="link1.url" target="_blank">{{ link1.name }}</a>
         </span>
         <span> | </span>
         <span v-if="link2">
-          <a href="{{ link2.url }}" target="_blank">{{ link2.name }}</a>
+          <a v-bind:href="link2.url" target="_blank">{{ link2.name }}</a>
         </span>
       </div>
       <div class="footer">

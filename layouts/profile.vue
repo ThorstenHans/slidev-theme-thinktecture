@@ -57,9 +57,9 @@ const style = computed(() => handleBackground(props.image))
       <div class="contact flex-none">
         <h3>Contact</h3>
 
-        <a v-if="blog" href="{{ blog.url }}" target="_blank">{{ blog.name }}</a><br/>
+        <a v-if="blog" v-bind:href="blog.url" target="_blank">{{ blog.name }}</a><br/>
         <a href="https://thinktecture.com" target="_blank">thinktecture.com</a><br/>
-        <a href="mailto:{{mail}}">{{ mail }}</a><span> | </span><a href="https://twitter.com/{{ twitter }}" target="_blank">@{{ twitter }}</a>
+        <a v-bind:href="'mailto:' + mail">{{ mail }}</a><span> | </span><a v-bind:href="'https://twitter.com/' +twitter" target="_blank">@{{ twitter }}</a>
       </div>
     </div>
     <div class="w-full w-full" :style="style" />
