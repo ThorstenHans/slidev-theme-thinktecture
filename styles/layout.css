@@ -28,9 +28,14 @@
 }
 
 .slidev-layout.default {
+
   h1 {
     @apply text-4xl leading-10;
     color: var(--slidev-theme-default-header-color);
+  }
+
+  ul,li {
+    @apply text-xl;
   }
 }
 
