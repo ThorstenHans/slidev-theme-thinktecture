@@ -27,15 +27,19 @@
   color: var(--slidev-theme-primary);
 }
 
-.slidev-layout.default {
+#slide-content > div.default {
+    @apply mx-8 w-auto;
+}
 
+.slidev-layout.default {
+  
   h1 {
     @apply text-4xl leading-10;
     color: var(--slidev-theme-default-header-color);
   }
 
   ul,li {
-    @apply text-xl;
+    @apply text-2xl mb-4 leading-8;
   }
 }
 
