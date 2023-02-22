@@ -2,6 +2,7 @@
 theme: ./
 titleTemplate: '%s'
 ---
+
 Super Awesome Topic
 
 ::subtitle::
@@ -29,7 +30,7 @@ tags:
 awards:
   - Certified 🥃 Drinker
   - Most Valuable 🐶 Walker
---- 
+---
 
 ---
 layout: image-right
