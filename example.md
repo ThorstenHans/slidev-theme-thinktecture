@@ -88,6 +88,20 @@ name: This is a super cool demo
 ---
 
 ---
+layout: two-columns
+---
+
+# This is my title
+
+::left::
+
+This goes left
+
+::right::
+
+this goes right
+
+---
 layout: closing
 link1:
   name: '@ThorstenHans'

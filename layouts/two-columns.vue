@@ -1,11 +1,16 @@
 <template>
-  <div class="slidev-layout twocols">
+  <div class="slidev-layout two-columns">
     <div class="my-auto w-full">
       <slot />
-      <template v-slot:left>
-      </template>
-      <template v-slot:right>
-      </template>
+      <div class="flex flex-row">
+        <div class="flex-1">
+          <slot name="left" />
+        </div>
+        <div class="flex-1">
+          <slot name="right" />
+        </div>
+        </div>
+      
     </div>
   </div>
 </template>

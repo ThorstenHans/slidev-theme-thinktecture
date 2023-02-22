@@ -106,6 +106,13 @@
   }
 }
 
+.slidev-layout.two-columns {
+    h1 {
+        @apply text-4xl leading-10;
+        color: var(--slidev-theme-default-header-color);
+      }
+}
+
 .slidev-layout.profile{
     p, li {
       @apply text-m leading-5;
