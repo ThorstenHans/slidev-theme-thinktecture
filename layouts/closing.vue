@@ -5,13 +5,15 @@ export interface Link {
   url: string
 }
 export interface Props {
-  link1: Link
-  link2: Link
+  link1: Link | null
+  link2: Link | null
 }
-const props = withDefaults(defineProps<Props>(), {
+
+withDefaults(defineProps<Props>(), {
   link1: null,
   link2: null,
 })
+
 </script>
 <template>
   <div class="slidev-layout closing text-center">

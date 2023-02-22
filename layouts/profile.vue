@@ -1,4 +1,5 @@
 <script setup lang="ts">
+
 import { computed } from 'vue'
 import { handleBackground} from '../helpers'
 
@@ -11,12 +12,12 @@ export interface Props {
   speaker: string
   twitter: string
   image: string
-  tags: string[]
-  awards: string[]
+  tags: Array<string>
+  awards: Array<string>
   welcome?: string
   job?: string
   mail?: string
-  blog?: Blog
+  blog?: Blog | null
 }
 const props = withDefaults(defineProps<Props>(), {
   welcome: 'Hi 👋🏼',
@@ -24,8 +25,8 @@ const props = withDefaults(defineProps<Props>(), {
   job: 'Hausmeister',
   mail: 'office@thinktecture.com',
   blog: null,
-  tags: [],
-  awards: []
+  tags: new Array<string>(),
+  awards: new Array<string>()
 })
 
 const style = computed(() => handleBackground(props.image))
@@ -59,7 +60,7 @@ const style = computed(() => handleBackground(props.image))
 
         <a v-if="blog" v-bind:href="blog.url" target="_blank">{{ blog.name }}</a><br/>
         <a href="https://thinktecture.com" target="_blank">thinktecture.com</a><br/>
-        <a v-bind:href="'mailto:' + mail">{{ mail }}</a><span> | </span><a v-bind:href="'https://twitter.com/' +twitter" target="_blank">@{{ twitter }}</a>
+        <a v-bind:href="'mailto:' + mail">{{ mail }}</a><span> | </span><a v-bind:href="'https://twitter.com/' + twitter" target="_blank">@{{ twitter }}</a>
       </div>
     </div>
     <div class="w-full w-full" :style="style" />
