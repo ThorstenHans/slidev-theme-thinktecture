@@ -103,12 +103,13 @@ this goes right
 
 ---
 layout: closing
-link1:
-  name: '@ThorstenHans'
-  url: https://twitter.com/ThorstenHans
-link2:
-  name: GitHub Repo
-  url: https://github.com/ThorstenHans/azure-container-apps-samples
+links:
+  - name: '@ThorstenHans'
+    url: https://twitter.com/ThorstenHans
+  - name: Repo
+    url: https://github.com/ThorstenHans/azure-container-apps-samples
+  - name: Email
+    url: mailto:thorsten.hans@thinktecture.com
 ---
 ::footer::
 👋🏼 Thanks for your attention 👋🏼

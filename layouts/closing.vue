@@ -1,36 +1,33 @@
 <script setup lang="ts">
 
 export interface Link {
-  name: string
-  url: string
+    name: string
+    url: string
 }
 export interface Props {
-  link1: Link | null
-  link2: Link | null
+    links: Array<Link> | null
 }
 
 withDefaults(defineProps<Props>(), {
-  link1: null,
-  link2: null,
+    links: new Array<Link>(),
 })
 
 </script>
 <template>
-  <div class="slidev-layout closing text-center">
-    <div class="my-auto h-full flex flex-col">
-      <h1>Thank you</h1>
-      <div class="links flex-1">
-        <span v-if="link1">
-          <a v-bind:href="link1.url" target="_blank">{{ link1.name }}</a>
-        </span>
-        <span> | </span>
-        <span v-if="link2">
-          <a v-bind:href="link2.url" target="_blank">{{ link2.name }}</a>
-        </span>
-      </div>
-      <div class="footer">
-        <slot name="footer"></slot>
-      </div>
+    <div class="slidev-layout closing text-center">
+        <div class="my-auto h-full flex flex-col">
+            <h1>Thank you</h1>
+            <div class="links flex-1">
+                <!-- Iterate over links and create a a href for each -->
+                <span v-if="links" v-for="(link, index) in links">
+                    <a v-bind:href="link.url" target="_blank">{{ link.name }}</a>
+                    
+                    <span v-if="index < links.length-1"> | </span>
+                </span>
+            </div>
+            <div class="footer">
+                <slot name="footer"></slot>
+            </div>
+        </div>
     </div>
-  </div>
 </template>
