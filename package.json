@@ -1,7 +1,7 @@
 {
   "name": "slidev-theme-thinktecture",
   "author": "Thorsten Hans <thorsten.hans@gmail.com>",
-  "version": "0.0.7",
+  "version": "0.0.10",
   "keywords": [
     "slidev-theme",
     "slidev"
@@ -24,6 +24,7 @@
     "theme-vitesse": "^0.6.2"
   },
   "devDependencies": {
+    "@iconify-json/uim": "^1.1.5",
     "@slidev/cli": "^0.40.2"
   },
   "slidev": {
