@@ -11,10 +11,9 @@ defineProps({
 <template>
   <div class="slidev-layout demo h-full grid place-content-center">
     <div class="my-auto flex flex-col justify-center items-center">
-        <h1>DEMO</h1>
-        <h2>{{name}}</h2>
-      
-      <span v-motion-roll-visible-once-bottom class="demo-icon">🖥️</span>
+        <h2 class="uppercase">Demo</h2>
+        <h1>{{name}}</h1>
+        <uim-airplay class="pt-7 text-8xl accent animate-ping" />
     </div>
   </div>
 </template>

@@ -36,10 +36,10 @@ const style = computed(() => handleBackground(props.image))
   <div class="grid grid-cols-3 w-full h-full auto-rows-fr">
     <div class="slidev-layout profile col-span-2 flex flex-col" :class="props.class">
       <h1>{{ welcome }}, I'm {{ speaker }}</h1>
-      <p>{{ job }} @ Thinktecture</p>
+      <p>{{ job }} <span class="accent">@</span> Thinktecture</p>
         
-      <div class="focus">
-        <h3>Technology Focus</h3>
+      <div class="focus flex-1">
+        <h3 class="uppercase">Technology Focus</h3>
         <div class="tags">
           <div class="tag" v-for="item in tags">
             <span class="accent">#</span>{{ item }}
@@ -47,8 +47,8 @@ const style = computed(() => handleBackground(props.image))
         </div>
       </div>
       
-      <div class="awards flex-1">
-        <h3>Awards</h3>
+      <div v-if="awards != null && awards.length > 0" class="awards flex-1">
+        <h3 class="uppercase">Awards</h3>
         <ul>
           <li v-for="item in awards">{{ item }}
           </li>
@@ -56,7 +56,7 @@ const style = computed(() => handleBackground(props.image))
       </div>
       
       <div class="contact flex-none">
-        <h3>Contact</h3>
+        <h3 class="uppercase">Contact</h3>
 
         <a v-if="blog" v-bind:href="blog.url" target="_blank">{{ blog.name }}</a><br/>
         <a href="https://thinktecture.com" target="_blank">thinktecture.com</a><br/>
