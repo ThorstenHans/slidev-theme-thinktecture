@@ -1,7 +1,15 @@
 {
   "name": "slidev-theme-thinktecture",
-  "author": "Thorsten Hans <thorsten.hans@gmail.com>",
-  "version": "0.0.10",
+  "version": "0.0.11",
+  "author": {
+    "name": "Thorsten Hans",
+    "email": "thorsten.hans@gmail.com",
+    "url": "https://www.thorsten-hans.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "thorstenhans/slidev-theme-thinktecture"
+  },
   "keywords": [
     "slidev-theme",
     "slidev"
