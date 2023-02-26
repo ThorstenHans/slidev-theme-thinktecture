@@ -1,0 +1,20 @@
+.slidev-layout.closing h1 {
+    @apply text-6xl leading-20;
+    color: var(--slidev-theme-closing-header-color);
+}
+
+.slidev-layout.closing .footer {
+    @apply text-m leading-5;
+    color: var(--slidev-theme-closing-footer-color);
+}
+
+.slidev-layout.closing.alternative,
+.slidev-layout.closing.alternative a:hover {
+    background-color: var(--slidev-theme-closing-header-color);
+    color: var(--slidev-theme-closing-background-color);
+}
+
+.slidev-layout.closing.alternative h1,
+.slidev-layout.closing.alternative .footer {
+    color: var(--slidev-theme-closing-background-color);
+}

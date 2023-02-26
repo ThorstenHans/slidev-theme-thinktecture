@@ -54,21 +54,25 @@ html.dark {
   --prism-selection-background: #444444;
 }
 
+pre>code {
+  @apply text-lg;
+}
+
 pre[class*='language-'] {
   @apply p-2;
 }
 
 :not(pre) > code {
-  font-size: 0.9em;
+  
   background: var(--prism-background);
-  @apply font-light py-0.5 rounded;
+  @apply font-light text-lg py-0.5 rounded;
 }
 
 
 :not(pre) > code:before,
 :not(pre) > code:after {
   content: '`';
-  opacity: 0.50;
+  opacity: 0.1;
 }
 
 :not(pre) > code:before {

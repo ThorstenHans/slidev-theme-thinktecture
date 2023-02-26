@@ -1,0 +1,11 @@
+.slidev-layout.immersive h1 {
+    color: var(--slidev-theme-immersive-header-color);
+    text-shadow: -2px 0 var(--slidev-theme-immersive-header-border-color), 0 2px var(--slidev-theme-immersive-header-border-color), 2px 0 var(--slidev-theme-immersive-header-border-color), 0 -2px var(--slidev-theme-immersive-header-border-color);
+    font-weight: bold;
+    @apply text-8xl uppercase;
+}
+
+.slidev-layout.immersive.alternative h1 {
+    color: var(--slidev-theme-immersive-alternative-header-color);
+    text-shadow: -2px 0 var(--slidev-theme-immersive-alternative-header-border-color), 0 2px var(--slidev-theme-immersive-alternative-header-border-color), 2px 0 var(--slidev-theme-immersive-alternative-header-border-color), 0 -2px var(--slidev-theme-immersive-alternative-header-border-color);
+}

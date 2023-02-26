@@ -1,0 +1,24 @@
+.slidev-layout.intro {
+    background: var(--slidev-theme-background);
+    @apply h-full grid;
+}
+
+.slidev-layout.intro h1 {
+    color: var(--slidev-theme-cover-header-color);
+    @apply text-6xl leading-40 mb-10;
+}
+
+.slidev-layout.intro h2 {
+    color: var(--slidev-theme-cover-sub-header-color);
+    @apply text-4xl leading-20;
+}
+
+.slidev-layout.intro h1+p {
+    @apply -mt-2 opacity-50 mb-4;
+}
+
+.slidev-layout.intro p+h2,
+.slidev-layout.intro ul+h2,
+.slidev-layout.intro table+h2 {
+    @apply mt-10;
+}

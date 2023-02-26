@@ -1,0 +1,25 @@
+.slidev-layout.profile p,
+.slidev-layout.profile li {
+  @apply text-m leading-5;
+  line-height: 1.5;
+}
+
+.slidev-layout.profile h3 {
+  @apply text-2xl leading-15;
+  color: var(--slidev-theme-profile-sub-header-color);
+}
+
+.focus,
+.awards {
+  @apply mb-5;
+}
+
+.contact {
+  @apply text-sm leading-5;
+}
+
+.tags {
+  @apply text-sm leading-5;
+  display: flex;
+  gap: 0.5rem;
+}

@@ -1,0 +1,9 @@
+.slidev-layout.section h1 {
+    @apply text-6xl leading-20;
+    color: var(--slidev-theme-section-header-color);
+}
+
+.slidev-layout.section h2 {
+    @apply text-3xl leading-10;
+    color: var(--slidev-theme-section-kind-color);
+}

@@ -3,12 +3,25 @@
   --slidev-theme-primary: #FF584F;
   --slidev-theme-color: #FF584F;
   --slidev-theme-accent-muted: #999;
+  --slidev-theme-accent-dark: #333;
   --slidev-theme-background: #fff;
-  
+
   --slidev-theme-default-header-color: var(--slidev-theme-primary);
-  
+
+  --slidev-theme-cover-background-color: var(--slidev-theme-background);
   --slidev-theme-cover-header-color: var(--slidev-theme-primary);
   --slidev-theme-cover-sub-header-color: var(--slidev-theme-accent-muted);
+  
+  --slidev-theme-cover-alternative-background-color: var(--slidev-theme-primary);
+  --slidev-theme-cover-alternative-header-color: var(--slidev-theme-background);
+  --slidev-theme-cover-alternative-sub-header-color: var(--slidev-theme-background);
+
+
+  --slidev-theme-immersive-header-color: var(--slidev-theme-background);
+  --slidev-theme-immersive-header-border-color: var(--slidev-theme-primary);
+
+  --slidev-theme-immersive-alternative-header-color: var(--slidev-theme-primary);
+  --slidev-theme-immersive-alternative-header-border-color: var( --slidev-theme-background);
 
   --slidev-theme-profile-sub-header-color: var(--slidev-theme-primary);
 
@@ -19,124 +32,38 @@
   --slidev-theme-demo-header-color: var(--slidev-theme-primary);
   --slidev-theme-demo-kind-color: var(--slidev-theme-accent-muted);
 
+  --slidev-theme-closing-background-color: var(--slidev-theme-background);
   --slidev-theme-closing-header-color: var(--slidev-theme-primary);
   --slidev-theme-closing-footer-color: var(--slidev-theme-accent-muted);
 }
 
-.accent{
+.accent {
   color: var(--slidev-theme-primary);
 }
 
-#slide-content > div.default {
-    @apply mx-8 w-auto;
+.accent-background {
+  background: var(--slidev-theme-primary);
 }
 
-.slidev-layout.default {
-  
-  h1 {
-    @apply text-4xl leading-10;
-    color: var(--slidev-theme-default-header-color);
-  }
+header {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 22px;
+  background-color: var(--slidev-theme-primary);
+  font-size: 10px;
+  @apply text-white px-3 items-center v-mid text-xs
 }
 
-.slidev-layout.two-columns,
-.slidev-layout.default {
-
-  ul,li {
-    @apply text-2xl mb-4 leading-8;
-  }
+#slide-content>div.default {
+  @apply mx-8 w-auto;
 }
 
-.slidev-layout.closing {
-  h1 {
-    @apply text-6xl leading-20;
-    color: var(--slidev-theme-closing-header-color);
-  }
-
-  .footer {
-    @apply text-m leading-5;
-    color: var(--slidev-theme-closing-footer-color);
-  }
+.slidev-layout.default h1 {
+  @apply text-4xl leading-10;
+  color: var(--slidev-theme-default-header-color);
 }
 
-.slidev-layout.section {
-
-  h1 {
-    @apply text-6xl leading-20;
-    color: var(--slidev-theme-section-header-color);
-  }
-
-  h2 {
-    @apply text-3xl leading-10;
-    color: var(--slidev-theme-section-kind-color);
-  }
-}
-
-.slidev-layout.demo {
-
-  h1 {
-    @apply text-m leading-10;
-    color: var(--slidev-theme-demo-kind-color); 
-  }
-  h2 {
-    @apply text-3xl leading-10;
-    color: var(--slidev-theme-demo-header-color);  
-  }
-  .demo-icon {
-    @apply text-9xl leading-75;
-  }
-}
-
-.slidev-layout.cover,
-.slidev-layout.intro {
-  @apply h-full grid;
-
-  h1 {
-    @apply text-6xl leading-40 mb-10;
-    color: var(--slidev-theme-cover-header-color);
-  }
-
-  h2 {
-    @apply text-4xl leading-20;
-    color: var(--slidev-theme-cover-sub-header-color);
-  }
-
-  h1 + p {
-    @apply -mt-2 opacity-50 mb-4;
-  }
-
-  p + h2, ul + h2, table + h2 {
-    @apply mt-10;
-  }
-}
-
-.slidev-layout.two-columns {
-    h1 {
-        @apply text-4xl leading-10;
-        color: var(--slidev-theme-default-header-color);
-      }
-}
-
-.slidev-layout.profile{
-    p, li {
-      @apply text-m leading-5;
-      line-height: 1.5;
-    }
-    h3 {
-      @apply text-2xl leading-15;
-      color: var(--slidev-theme-profile-sub-header-color);
-    }
-
-    .focus,
-    .awards{
-      @apply mb-5;
-    }
-    .contact{
-      @apply text-sm leading-5;
-    }
-    .tags{
-      @apply text-sm leading-5;
-      display: flex;
-      gap: 0.5rem;
-    }
+.slidev-layout.default ul,
+.slidev-layout.default li {
+  @apply text-2xl mb-4 leading-8;
 }

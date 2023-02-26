@@ -1,0 +1,9 @@
+.slidev-layout.demo h1{
+    @apply text-6xl leading-20;
+    color: var(--slidev-theme-demo-header-color);
+}
+
+.slidev-layout.demo h2 {
+    @apply text-3xl leading-10;
+    color: var(--slidev-theme-demo-kind-color);
+}

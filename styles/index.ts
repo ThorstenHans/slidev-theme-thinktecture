@@ -1,4 +1,12 @@
 // inherit from base layouts, remove it to get full customizations
 import '@slidev/client/styles/layouts-base.css'
 import './layout.css'
+import './closing.css'
 import './code.css'
+import './cover.css'
+import './demo.css'
+import './immersive.css'
+import './intro.css'
+import './profile.css'
+import './section.css'
+import './two-columns.css'

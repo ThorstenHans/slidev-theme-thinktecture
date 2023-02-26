@@ -1,0 +1,57 @@
+.slidev-layout.cover {
+  background: var(--slidev-theme-cover-background-color);
+}
+
+.slidev-layout.cover h1 {
+  color: var(--slidev-theme-cover-header-color);
+}
+
+.slidev-layout.cover h2 {
+  color: var(--slidev-theme-cover-sub-header-color);
+}
+
+.slidev-layout.cover.alternative,
+.slidev-layout.cover.alternative a:hover {
+  background: var(--slidev-theme-cover-alternative-background-color);
+  color: var(--slidev-theme-cover-alternative-header-color);
+}
+
+.slidev-layout.cover.alternative h1 {
+  color: var(--slidev-theme-cover-alternative-header-color);
+}
+
+.slidev-layout.cover.alternative h2 {
+  color: var(--slidev-theme-cover-alternative-sub-header-color);
+}
+
+.slidev-layout.cover {
+  @apply h-full grid;
+}
+
+.slidev-layout.cover h1 {
+  @apply text-6xl leading-light mb-10 font-600;
+}
+
+.slidev-layout.cover h2 {
+  @apply text-4xl leading-light uppercase font-400;
+}
+
+.logo {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slidev-layout.cover .logo {
+  background-image: url('/logo-red.png');
+
+}
+
+.slidev-layout.cover.alternative .logo {
+  background-image: url('/logo-white.png');
+}

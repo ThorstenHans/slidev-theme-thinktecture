@@ -1,0 +1,9 @@
+.slidev-layout.two-columns h1 {
+  @apply text-4xl leading-10;
+  color: var(--slidev-theme-default-header-color);
+}
+
+.slidev-layout.two-columns ul,
+.slidev-layout.two-columns li {
+  @apply text-2xl mb-4 leading-8;
+}
